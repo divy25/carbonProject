@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="shortcut icon" href="https://bitrix24.net/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/bitrix24drive.css">
+    <title>Bitrex24 Drive</title>
+</head>
+<body onload="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div id="myNavbar" >
+        <button class="toggleBtn" id="toggleBtn1" onClick="toggleSidebar()">&#9776;</button>
+        <span id="full__Logo"><span>Bitrix</span><span>24</span></span>
+        <span class="nav__EditIcon"><i class="material-icons">edit</i></span>
+        
+        <div class="inputContainer">
+            <input type="text" required placeholder="find people,documents and more" /> 
+            <i class="material-icons">search</i>
+            </div>
+            <span id="clockDisplay" class="clockDisplay"></span>
+            <!-- <span class="icon__flag"><img src="https://www.flaticon.com/svg/static/icons/svg/455/455582.svg"/></span>  -->
+            
+            <!-- <span class="userDisplay"><i class="material-icons">account_circle</i> USER</span> -->
+            
+            <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">
+                        <span class="userDisplay"><i class="material-icons">account_circle</i> USER</span>
+                    </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#Myprofile">My Profile</a>
+                    <a href="#Themes">Themes</a>
+                    <a href="#MyBitrix24">My Bitrix24.Network page</a>
+                    <a href="#Configure">Configure notifications</a>
+                    <a href="#upgrade">Upgrade your plan</a>
+                    <a href="#Extensions">Extensions</a>
+                    <a href="#Logout">Log out</a>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div id="mySidebar" class="sidebar">
+        <div class="blank" onclick="openNav()"></div>
+        <a class="highlight" href="./index.html"><i class="material-icons">dynamic_feed</i><span class="icon-text">Feed</span></a><br>
+        <a class="highlight" href="./taskandprojects.html"><i class="material-icons">task_alt</i><span class="icon-text"></span>Task and Projects</a></span></a><br>
+        <a class="highlight" href="./chatandcalls.html"><i class="material-icons">chat_bubble</i><span class="icon-text"></span>Chat and Calls</span></a><br>
+        <a class="highlight" href="./workgroups.html"><i class="material-icons">group_work</i><span class="icon-text"></span>Workgroups</span></a><br>
+        <a class="active" class="highlight" href="./bitrix24drive.html"><i class="material-icons">storage</i><span class="icon-text"></span>Bitrex24 Drive</span></a><br>
+        <a class="highlight" href="./timeandreports.html"><i class="material-icons">pending_actions</i><span class="icon-text"></span>Time and Reports</span></a><br>
+        <a class="highlight" href="./crm.html"><i class="material-icons">support_agent</i><span class="icon-text"></span>CRM</span></a><br>
+        <a class="highlight" href="./calendar.html"><i class="material-icons">calendar_today</i><span class="icon-text"></span>Calendar<span></a>
+        
+    </div>
+   
+    <div id="main">
+
+        <!-- Top Navigation Bar -->
+
+        <div class="topBar">
+            <div>My Drive</div>
+            <div>Company Drive</div>
+            <div>Desktop App for Windows</div>
+            <div>Desktop App for MacOS</div>
+            <div>Drive Cleanup</div>
+            <div>
+                <div>More</div>
+                <i class="fa fa-caret-down " style="font-size: 10px;"></i>
+            </div>
+        </div>
+
+        <!-- My tasks Bar -->
+
+        <div id="myTasksBar">
+            <div>
+                <div>My Drive</div>
+                <img src="https://img.icons8.com/android/24/696c89/star.png"/>
+            </div>
+            
+            <div>
+                <input type="text" placeholder="Filter and search" style="border: transparent;outline: none;"/>
+                <img src="https://img.icons8.com/ios-glyphs/30/e0e0e0/search.png"/>
+            </div>
+
+            <div>Recycle Bin</div>
+
+            <div>
+                <img src="https://img.icons8.com/metro/20/282828/settings.png"/>
+            </div>
+
+            <div>
+                <div>Add</div>
+                <i class="fa fa-caret-down " style="font-size: 10px; color: white;"></i>
+            </div>
+        </div>
+
+        <!-- Drive List -->
+
+        <div id="tasksList">
+            <div>My Drive</div>
+            <div>Files deleted to the Recycle Bin are kept for 30 days</div>
+            <div>By date changed</div>
+            <div>
+                <i class="fa fa-angle-down" style="font-size:24px"></i>
+                <i class="fa fa-bars" style="font-size:25px"></i>
+                <i class='fas fa-th' style='font-size:22px'></i>
+                <i class='fas fa-th-large' style='font-size:22px'></i>
+            </div>   
+        </div>
+
+        <!-- Folders -->
+
+        <div class="folders">
+            <div>
+                <i class="fa fa-bars" style="font-size:15px"></i>
+                <i class='fas fa-folder' style='font-size:180px;color: #4cbdf2;opacity: 0.9;;'></i>
+                <div>Uploaded files</div>
+            </div>
+            <div>
+                <i class="fa fa-bars" style="font-size:15px"></i>
+                <i class='fas fa-folder' style='font-size:180px;color: #4cbdf2;'></i>
+                <div>Extranet_group for extern... </div>
+            </div>
+            <div>
+                <i class="fa fa-bars" style="font-size:15px"></i>
+                <i class='fas fa-folder' style='font-size:180px;color: #4cbdf2;'></i>
+                <div>Open public group</div>
+            </div>
+            <div>
+                <i class="fa fa-bars" style="font-size:15px"></i>
+                <i class='fas fa-folder' style='font-size:180px;color: #4cbdf2;'></i>
+                <div>Private hidden group</div>
+            </div>
+            <div>
+                <i class="fa fa-bars" style="font-size:15px"></i>
+                <i class='fas fa-folder' style='font-size:180px;color: #4cbdf2;'></i>
+                <div>Private visible group</div>
+            </div>
+            <div>
+                <i class="fa fa-bars" style="font-size:15px"></i>
+                <i class='fas fa-folder' style='font-size:180px;color: #4cbdf2;'></i>
+                <div>Work Area</div>
+            </div>
+            <div>
+                <i class="fa fa-bars" style="font-size:15px"></i>
+                <i class='fas fa-folder' style='font-size:180px;color: #4cbdf2;opacity: 0.9;;'></i>
+                <div>New Project</div>
+            </div>
+            <div>
+                <i class="fa fa-bars" style="font-size:15px"></i>
+                <i class='fas fa-folder' style='font-size:180px;color: #4cbdf2;'></i>
+                <div>Documentation files... </div>
+            </div>
+           
+        </div>
+    </div>
+    <div id="myRight__bar">
+        <span class="highlightTwo" ><i class="material-icons">help</i></span>
+        <span class="highlightTwo" ><i class="material-icons">notifications</i></span>
+        <span class="highlightTwo"><i class="material-icons">search</i></span>
+    </div>
+    <div id="myFooter__bar">
+        <button class="button__logo"><img src="https://www.bitrix24.com/online-domains-map/logo-bx24-en.png" /></button>
+        <button class="button__logo">English</button>
+        <span>© 2020 Bitrix24</span>
+        <span>|</span>
+        <span>Implementation request</span>
+        <span>|</span>
+        <span>Themes</span>
+        <span>|</span>
+        <span>Print</span>
+    </div>
+
+    <script src="./scripts/skeleton.js"></script>
+</body>
+</html>

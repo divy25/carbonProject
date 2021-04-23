@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="https://bitrix24.net/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/taskandprojects.css">
+    <title>taskandprojects</title>
+</head>
+<body onload="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div id="myNavbar" >
+        <button class="toggleBtn" id="toggleBtn1" onClick="toggleSidebar()">&#9776;</button>
+        <span id="full__Logo"><span>Bitrix</span><span>24</span></span>
+        <span class="nav__EditIcon"><i class="material-icons">edit</i></span>
+        
+        <div class="inputContainer">
+            <input type="text" required placeholder="find people,documents and more" /> 
+            <i class="material-icons">search</i>
+            </div>
+            <span id="clockDisplay" class="clockDisplay"></span>
+            <!-- <span class="icon__flag"><img src="https://www.flaticon.com/svg/static/icons/svg/455/455582.svg"/></span>  -->
+            
+            <!-- <span class="userDisplay"><i class="material-icons">account_circle</i> USER</span> -->
+            
+            <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">
+                        <span class="userDisplay"><i class="material-icons">account_circle</i> USER</span>
+                    </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#Myprofile">My Profile</a>
+                    <a href="#Themes">Themes</a>
+                    <a href="#MyBitrix24">My Bitrix24.Network page</a>
+                    <a href="#Configure">Configure notifications</a>
+                    <a href="#upgrade">Upgrade your plan</a>
+                    <a href="#Extensions">Extensions</a>
+                    <a href="#Logout">Log out</a>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div id="mySidebar" class="sidebar">
+        <div class="blank" onclick="openNav()"></div>
+        <a class="highlight" href="./index.html"><i class="material-icons">dynamic_feed</i><span class="icon-text">Feed</span></a><br>
+        <a  class="active" class="highlight"  href="./taskandprojects.html"><i class="material-icons">task_alt</i><span class="icon-text"></span>Task and Projects</a></span></a><br>
+        <a class="highlight" href="./chatandcalls.html"><i class="material-icons">chat_bubble</i><span class="icon-text"></span>Chat and Calls</span></a><br>
+        <a class="highlight" href="./workgroups.html"><i class="material-icons">group_work</i><span class="icon-text"></span>Workgroups</span></a><br>
+        <a class="highlight" href="./bitrix24drive.html"><i class="material-icons">storage</i><span class="icon-text"></span>Bitrex24 Drive</span></a><br>
+        <a class="highlight" href="./timeandreports.html"><i class="material-icons">pending_actions</i><span class="icon-text"></span>Time and Reports</span></a><br>
+        <a class="highlight" href="./crm.html"><i class="material-icons">support_agent</i><span class="icon-text"></span>CRM</span></a><br>
+        <a class="highlight" href="./calendar.html"><i class="material-icons">calendar_today</i><span class="icon-text"></span>Calendar<span></a>
+        
+    </div>
+   
+    <div id="main">
+        <!-- Top Navigation Bar -->
+
+        <div class="topBar">
+            <a href="taskandprojects.html" style="text-decoration: none;"><div>Tasks</div></a>
+            <a href="taskandprojects.html" style="text-decoration: none;"><div>Ongoing</div></a>
+            <div>Assisting</div>
+            <div>Set by me</div>
+            <div>Following</div>
+            <div>Projects</div>
+            <div>Kanban</div>
+            <div>
+                <div>100%</div>
+                <div>Efficiency</div>
+            </div>
+            <div>More</div>
+        </div>
+
+        <!-- My tasks Bar -->
+
+        <div id="myTasksBar">
+            <div>
+                <div>My Tasks</div>
+                <img src="https://img.icons8.com/android/24/696c89/star.png"/>
+            </div>
+            <div >
+                <div id="newTask" >New Task</div>
+                <i id="newTaskIcon" class="fa fa-caret-down " style="font-size: 10px;"></i>
+                <div id="newTaskDropDown" class="newTaskDropDown">
+                    <div id="addNewTask" class="addNewTask"> Add new task</div>
+                    <div id="allTemplates" class="allTemplates">All templates</div>
+                </div>
+                <div id="inputForNewTask" class="inputForNewTask">
+                    <h6 class="addTask">New Task<span class="goBack" id="goBack">Go back</span></h6>
+                    <div class="inputTaskCover">
+                        <div class="enterTask">Things to do</div>
+                        <input id="newTaskTextArea" class="newTaskTextArea" placeholder="Enter the tasks"></input></br>
+                        <input id="deadLine" class="deadLine" placeholder="DeadLine" style="width: 80%;"></input>
+                        <input id="responsiblePerson" class="responsiblePerson" placeholder="Responsible Person"/>
+                    </div>
+                    <button id="addTaskBtn" class="addTaskBtn">Add Task</button>
+                </div>
+                <!-- <div class="taskTemplatesToggler" id="taskTemplatesToggler">
+                    
+                </div> -->
+            </div>
+            <div>
+                <div>In progress</div>
+                <input type="text" placeholder="+ search" style="border: transparent;outline: none;"/>
+                <img src="https://img.icons8.com/ios-glyphs/30/e0e0e0/search.png"/>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/metro/20/282828/settings.png"/>
+                <img src="https://img.icons8.com/material-sharp/24/282828/conflict.png"/>
+            </div>
+        </div>
+
+        <!-- Tasks List -->
+
+        <div id="tasksList">
+            <div>List</div>
+            <div>Deadline</div>
+            <div>Planner</div>
+            <div>Calendar</div>
+            <div>Gantt</div>
+            <div>There are no tasks requiring immediate attention</div>
+            <div>
+                <div>Extensions</div>
+                <i class="fa fa-caret-down " style="font-size: 10px;"></i>
+            </div>    
+        </div>
+
+        <!-- Tasks Table -->
+
+        <div id="tasksTable">
+            <div id="tasksTableHeading">
+                <input id="checkBox1" class="checkBox" type="checkbox"/>
+                <img class="tasksIcon" src="https://img.icons8.com/metro/20/282828/settings.png"/>
+                <div class="name">NAME</div>
+                <div class="activity">
+                    <div>ACTIVITY</div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Ic_arrow_drop_down_36px.svg/1200px-Ic_arrow_drop_down_36px.svg.png"/>
+                </div>
+                <div class="deadline">DEADLINE</div>
+                <div class="createdBy">CREATED BY</div>
+                <div class="responsible">RESPONSIBLE PERSON</div>
+                <div class="project">PROJECT</div>
+                <div class="tags">TAGS</div>
+            </div>
+            <div class="tasksTableContent">
+                <input id="checkBox2" class="checkBox" type="checkbox"/>
+                <img class="tasksIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/VisualEditor_-_Icon_-_Menu.svg/1024px-VisualEditor_-_Icon_-_Menu.svg.png"/>
+                <div id="name1" class="name">Fill out profile</div>
+                <div id="activity1" class="activity">December 28, 1:58pm</div>
+                <div id="deadline1" class="deadline">No Deadline</div>
+                <div id="createdBy1" class="createdBy" style="display: flex;">
+                    <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqAU9KXPynTtqeWYLQlJ9CRVULXthc2yNlRw&usqp=CAU"/>
+                    <div id="userCreatedBy1">User</div>
+                </div>
+                <div id="responsible1" class="responsible" style="display: flex;">
+                    <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqAU9KXPynTtqeWYLQlJ9CRVULXthc2yNlRw&usqp=CAU"/>
+                    <div id="userResponsible1">User</div>
+                </div>
+            </div>
+            <div class="tasksTableContent">
+                <input id="checkBox3" class="checkBox" type="checkbox"/>
+                <img class="tasksIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/VisualEditor_-_Icon_-_Menu.svg/1024px-VisualEditor_-_Icon_-_Menu.svg.png"/>
+                <div class="name">Invite colleagues</div>
+                <div class="activity">December 28, 1:58pm</div>
+                <div class="deadline">No Deadline</div>
+                <div class="createdBy" style="display: flex;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqAU9KXPynTtqeWYLQlJ9CRVULXthc2yNlRw&usqp=CAU"/>
+                    <div>User</div>
+                </div>
+                <div class="responsible" style="display: flex;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqAU9KXPynTtqeWYLQlJ9CRVULXthc2yNlRw&usqp=CAU"/>
+                    <div>User</div>
+                </div>
+            </div>
+            <div class="tasksTableContent">
+                <input id="checkBox4" class="checkBox" type="checkbox"/>
+                <img class="tasksIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/VisualEditor_-_Icon_-_Menu.svg/1024px-VisualEditor_-_Icon_-_Menu.svg.png"/>
+                <div class="name">Download Bitrix24 app</div>
+                <div class="activity">December 28, 1:58pm</div>
+                <div class="deadline">No Deadline</div>
+                <div class="createdBy" style="display: flex;">
+                    <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqAU9KXPynTtqeWYLQlJ9CRVULXthc2yNlRw&usqp=CAU"/>
+                    <div>User</div>
+                </div>
+                <div class="responsible" style="display: flex;">
+                    <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqAU9KXPynTtqeWYLQlJ9CRVULXthc2yNlRw&usqp=CAU"/>
+                    <div>User</div>
+                </div>
+            </div>
+            <div id="taskAdder"></div>
+            <div class="tasksInfo">
+                <div>CHECKED:<span id="checkedCounter">0</span></div>
+                <div>TOTAL:<span>SHOW QUANTITY</span></div>
+                <div>PAGES:1</div>
+                <div>RECORDS:</div>
+                <div >
+                    <div>50</div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Ic_arrow_drop_down_36px.svg/1200px-Ic_arrow_drop_down_36px.svg.png"/>
+                </div>
+            </div>
+            <div class="tasksLast">
+                <div>
+                    <div>SELECT ACTION</div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Ic_arrow_drop_down_36px.svg/1200px-Ic_arrow_drop_down_36px.svg.png"/>
+                </div>
+                <div id="applyBtn">Apply</div>
+                <div>
+                    <input type="checkbox"/>
+                    <div>FOR ALL</div>
+                </div>
+                
+            </div>
+        </div>
+    
+    </div>
+    <div id="myRight__bar">
+        <span class="highlightTwo" ><i class="material-icons">help</i></span>
+        <span class="highlightTwo" ><i class="material-icons">notifications</i></span>
+        <span class="highlightTwo"><i class="material-icons">search</i></span>
+    </div>
+    <div id="myFooter__bar">
+        <button class="button__logo"><img src="https://www.bitrix24.com/online-domains-map/logo-bx24-en.png" /></button>
+        <button class="button__logo">English</button>
+        <span>© 2020 Bitrix24</span>
+        <span>|</span>
+        <span>Implementation request</span>
+        <span>|</span>
+        <span>Themes</span>
+        <span>|</span>
+        <span>Print</span>
+    </div>
+
+   
+    <script src="./scripts/taskandprojects.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="shortcut icon" href="https://bitrix24.net/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5d7d266e90.js" crossorigin="anonymous"></script> 
+    <title>Index</title>
+</head>
+<body onload="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div id="myNavbar" >
+        <button class="toggleBtn" id="toggleBtn1" onClick="toggleSidebar()">&#9776;</button>
+        <span id="full__Logo"><span>Bitrix</span><span>24</span></span>
+        <span  class="nav__EditIcon"><i class="material-icons">edit</i></span>
+        
+        <div class="inputContainer">
+            <input type="text" required placeholder="find people,documents and more" /> 
+            <i  class="material-icons">search</i>
+            </div>
+            <span id="clockDisplay" class="clockDisplay"></span>
+            <!-- <span class="icon__flag"><img src="https://www.flaticon.com/svg/static/icons/svg/455/455582.svg"/></span>  -->
+            
+            <!-- <span class="userDisplay"><i class="material-icons">account_circle</i> USER</span> -->
+            
+            <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">
+                        <span class="userDisplay"><i id="white"  class="material-icons">account_circle</i> USER</span>
+                    </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#Myprofile">My Profile</a>
+                    <a href="#Themes">Themes</a>
+                    <a href="#MyBitrix24">My Bitrix24.Network page</a>
+                    <a href="#Configure">Configure notifications</a>
+                    <a href="#upgrade">Upgrade your plan</a>
+                    <a href="#Extensions">Extensions</a>
+                    <a href="#Logout">Log out</a>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div id="mySidebar" class="sidebar" >
+        <div class="blank" onclick="openNav()"></div>
+        <a class="active" class="highlight" href="./index.html"><i class="material-icons">dynamic_feed</i><span class="icon-text">Feed</span></a><br>
+        <a  class="highlight" href="./taskandprojects.html"><i class="material-icons">task_alt</i><span class="icon-text"></span>Task and Projects</a></span></a><br>
+        <a class="highlight" href="./chatandcalls.html"><i class="material-icons">chat_bubble</i><span class="icon-text"></span>Chat and Calls</span></a><br>
+        <a class="highlight" href="./workgroups.html"><i class="material-icons">group_work</i><span class="icon-text"></span>Workgroups</span></a><br>
+        <a class="highlight" href="./bitrix24drive.html"><i class="material-icons">storage</i><span class="icon-text"></span>Bitrex24 Drive</span></a><br>
+        <a class="highlight" href="./timeandreports.html"><i class="material-icons">pending_actions</i><span class="icon-text"></span>Time and Reports</span></a><br>
+        <a class="highlight" href="./crm.html"><i class="material-icons">support_agent</i><span class="icon-text"></span>CRM</span></a><br>
+        <a class="highlight" href="./calendar.html"><i class="material-icons">calendar_today</i><span class="icon-text"></span>Calendar<span></a>
+    </div>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="space"></div>
+        <a class="highlight" class="active"  href="./index.html"><i class="material-icons">dynamic_feed</i><span class="icon-text">Feed</span></a><br>
+        <a class="highlight" href="./taskandprojects.html"><i class="material-icons">task_alt</i><span class="icon-text"></span>Task and Projects</a></span></a><br>
+        <a class="highlight" href="./chatandcalls.html"><i class="material-icons">chat_bubble</i><span class="icon-text"></span>Chat and Calls</span></a><br>
+        <a class="highlight" href="workgroups.html"><i class="material-icons">group_work</i><span class="icon-text"></span>Workgroups</span></a><br>
+        <a class="highlight" href="bitrix24drive.html"><i class="material-icons">storage</i><span class="icon-text"></span>Bitrex24 Drive</span></a><br>
+        <a class="highlight" href="timeandreports.html"><i class="material-icons">pending_actions</i><span class="icon-text"></span>Time and Reports</span></a><br>
+        <a class="highlight" href="crm.html"><i class="material-icons">support_agent</i><span class="icon-text"></span>CRM</span></a><br>
+        <a class="highlight" href="./calendar.html"><i class="material-icons">calendar_today</i><span class="icon-text"></span>Calendar<span></a>
+        
+    </div>
+    <div id="main">
+        <div class="column1">
+            <div class="responseBox">
+                <div class="responseBoxFlex">
+                    <a href="#message">MESSAGE</a>
+                    <a href="#task">TASK</a>
+                    <a href="#event">EVENT</a>
+                    <a href="#poll">POLL</a>
+                   
+                    <div class="dropmore">
+                       
+                         <button onclick="loadMore()"  class="droptag">MORE</button>
+                        <div id="myDropmore" class="dropdown-content">
+                          <a href="#home">File</a>
+                          <a href="#about">Appreciation</a>
+                          <a href="#contact">Announcement</a>
+                        </div>
+                      </div>
+                     
+                      
+                </div>
+                <hr>
+                <div class="responseBoxInput">
+                    <textarea type="text" placeholder="Send message ..."></textarea>
+                </div>
+            </div>
+            <div class="feedBox">
+                <p>Feed</p>
+                <img id="star" src="https://img.icons8.com/android/24/696c89/star.png"/>
+                <input id="feed" style="font-family: FontAwesome" placeholder=' Filter and search &#xf002' />
+                <i class="fa fa-gear"></i>
+            </div>
+            <div class="postBox">
+                        <div class="postImage">
+                                <div class="pImage">
+                                    <img src="https://icon2.cleanpng.com/20180422/jzq/kisspng-computer-icons-user-profile-login-clip-art-my-account-icon-5adc5dd8a7f571.352380661524391384688.jpg" alt="image"></img>
+                                </div>
+                                
+                                <div class="postIntro">
+                                            <div>
+                                                <p>Divya prakash</p>
+                                                <i class="fas fa-greater-than"></i>
+                                                <p>To all employees</p>
+                                            </div>
+                                            <div class="date">
+                                                <p>December 28 1:11 am</p>
+                                            </div>
+                                </div>
+                                <div class="postIcon">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                    <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                                </div>
+                            
+                            
+                        </div>
+                       
+                        <div class="video">
+                            <label><a href="#welcome">Welcome to Bitrix24!</a></label><br>
+                            <iframe width="600" height="345" src="https://www.youtube.com/embed/rTgg8HsOUVQ?controls=0">
+                            </iframe>
+                            <p>Hurray! You are about to get 1000% more productive with Bitrix24. Please watch this 1-minute video to learn what<br>Bitrix24 is about, how to invite your colleagues and where to find help, if you need it.</p>
+
+                        </div>
+                    <div class="tags">
+                        <p>Tags:</p>
+                        <p>Advice,Tips</p>
+                       
+                    </div>
+                    <hr>
+                    <div class="reactions">
+                        <button>Like</button>
+                        <button>Comment</button>
+                        <button>Follow</button>
+                        <button>More</button>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="commentBox">
+                        <img src="https://icon2.cleanpng.com/20180422/jzq/kisspng-computer-icons-user-profile-login-clip-art-my-account-icon-5adc5dd8a7f571.352380661524391384688.jpg" alt="pc"></img>
+                        <input type="text" placeholder="Add comment"></input>
+                    </div>
+            </div>
+           
+
+        </div>
+        <div class="column2">
+             <div class="column2Box1">
+                  <p>INVITE USERS</p>
+                  <button class="btnPlus">+</button>
+             </div>
+             <div class="column2Box2">
+                   <div>1</div>
+                   <i class="fas fa-user"></i>
+                   <i class="fas fa-question"></i>
+             </div>
+             <div class="column2Box3">
+                   <p>COMPANY PULSE</p>
+                   <button>0</button>
+                   <button>0%</button>
+             </div>
+             <div class="column2Box4">
+                
+                    <p>MY TASKS</p>
+                    <button>+</button>
+                 </div>
+            
+             <div class="column2Box5">
+                    <div class="b1">
+                        <a href="#Ongoing">Ongoing</a>
+                        <p>3</p>
+                        <button>0</button>
+                    </div>
+                    <div class="b2">
+                        <a href="#Assisting">Assisting</a>
+                        <p>0</p>
+                        <button>0</button>
+                    </div>
+                    <div class="b3">
+                        <a href="#Sent_by_me">Sent by me</a>
+                        <p>0</p>
+                        <button>0</button>
+                    </div>
+                    <div class="b4">
+                        <a href="#Following">Following</a>
+                        <p>0</p>
+                        <button>0</button>
+                    </div>
+
+             </div>
+             <div class="column2Box6">
+                   <div>POPULAR POSTS</div>
+             </div>
+             <div class="column2Box7">
+                    <div class="userIcon">
+                        <!-- <i class="material-icons w3-xxlarge">account_circle</i> -->
+                        <img src="https://icon2.cleanpng.com/20180422/jzq/kisspng-computer-icons-user-profile-login-clip-art-my-account-icon-5adc5dd8a7f571.352380661524391384688.jpg" alt="user"></img>
+                    </div>
+                    <div class="profile">
+                        <p>USER</p>
+                        <a href="#welcome">Welcome to Bitrix24!</a>
+                    </div>
+             </div>
+             
+             <div class="column2Box8">
+                    <p>DESKTOP CLIENT</p>
+             </div>
+            <div class="column2Box9">
+                <i class="fab fa-apple">MAC OS</i>
+                <i class="fab fa-windows">WINDOWS</i>
+                <i class="fab fa-linux">LINUX</i>
+            </div>
+             
+             <div class="column2Box10">
+                  <p>MOBILE APPLICATION</p>
+             </div>
+               <div class="column2Box11">
+                   <div>
+                    <img src="https://p7.hiclipart.com/preview/253/299/670/iphone-computer-icons-apple-icon-image-format-app-store-os7-style-metro-ui-icon.jpg" alt="mac"></img>
+                    <p>APP STORE</p>
+                   </div>
+                   <div>
+                    <img src="https://png.pngtree.com/element_our/png_detail/20181227/android-logo-glyph-black-icon-png_291876.jpg" alt="android"></img>
+                    <p>GOOGLE PLAY</p>
+                  </div>
+             </div>
+        </div>
+      
+    
+    </div>
+    <div id="myRight__bar">
+        <span class="highlightTwo" ><i class="material-icons">help</i></span>
+        <span class="highlightTwo" class="highlightthree"><i class="material-icons">notifications</i></span>
+        <span class="highlightTwo"class="highlightthree"><i class="material-icons">search</i></span>
+    </div>
+    <div id="myFooter__bar">
+        <button class="button__logo"><img src="https://www.bitrix24.com/online-domains-map/logo-bx24-en.png" /></button>
+        <button class="button__logo">English</button>
+        <span>© 2020 Bitrix24</span>
+        <span>|</span>
+        <span>Implementation request</span>
+        <span>|</span>
+        <span>Themes</span>
+        <span>|</span>
+        <span>Print</span>
+    </div>
+
+    <script src="./scripts/skeleton.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

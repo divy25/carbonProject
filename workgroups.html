@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/workgroups.css">
+    <link rel="shortcut icon" href="https://bitrix24.net/favicon.ico" type="image/x-icon">
+    <title>workgroups</title>
+</head>
+<body onload="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div id="myNavbar" >
+        <button class="toggleBtn" id="toggleBtn1" onClick="toggleSidebar()">&#9776;</button>
+        <span id="full__Logo"><span>Bitrix</span><span>24</span></span>
+        <span class="nav__EditIcon"><i class="material-icons">edit</i></span>
+        
+        <div class="inputContainer">
+            <input type="text" required placeholder="find people,documents and more" /> 
+            <i class="material-icons">search</i>
+            </div>
+            <span id="clockDisplay" class="clockDisplay"></span>
+            <!-- <span class="icon__flag"><img src="https://www.flaticon.com/svg/static/icons/svg/455/455582.svg"/></span>  -->
+            
+            <!-- <span class="userDisplay"><i class="material-icons">account_circle</i> USER</span> -->
+            
+            <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">
+                        <span class="userDisplay"><i class="material-icons">account_circle</i> USER</span>
+                    </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#Myprofile">My Profile</a>
+                    <a href="#Themes">Themes</a>
+                    <a href="#MyBitrix24">My Bitrix24.Network page</a>
+                    <a href="#Configure">Configure notifications</a>
+                    <a href="#upgrade">Upgrade your plan</a>
+                    <a href="#Extensions">Extensions</a>
+                    <a href="#Logout">Log out</a>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div id="mySidebar" class="sidebar">
+        <div class="blank" onclick="openNav()"></div>
+        <a class="highlight" href="./index.html"><i class="material-icons">dynamic_feed</i><span class="icon-text">Feed</span></a><br>
+        <a class="highlight" href="./taskandprojects.html"><i class="material-icons">task_alt</i><span class="icon-text"></span>Task and Projects</a></span></a><br>
+        <a class="highlight" href="./chatandcalls.html"><i class="material-icons">chat_bubble</i><span class="icon-text"></span>Chat and Calls</span></a><br>
+        <a class="active" class="highlight" href="./workgroups.html"><i class="material-icons">group_work</i><span class="icon-text"></span>Workgroups</span></a><br>
+        <a class="highlight" href="./bitrix24drive.html"><i class="material-icons">storage</i><span class="icon-text"></span>Bitrex24 Drive</span></a><br>
+        <a class="highlight" href="./timeandreports.html"><i class="material-icons">pending_actions</i><span class="icon-text"></span>Time and Reports</span></a><br>
+        <a class="highlight" href="./crm.html"><i class="material-icons">support_agent</i><span class="icon-text"></span>CRM</span></a><br>
+        <a class="highlight" href="./calendar.html"><i class="material-icons">calendar_today</i><span class="icon-text"></span>Calendar<span></a>
+        
+    </div>
+   
+    <div id="main">
+        <div class="main__Container">
+            <div class="workGroups__table1">
+                <h3>Workgroups and projects</h3>
+                <!-- <i class="material-icons">group_work</i> -->
+                <input type="text" placeholder="Filter and search"/>
+    
+            </div>
+                <div class="workGroup__common">
+                <div class="workGroup__left__side">
+                    <div class="workGroup__sort">
+                        <div>SORT BY:</div>
+                        <div>ABC order</div>
+                    </div>
+                    <div class="thin__line"></div>
+                    <div class="bottom">
+                        <div>
+                            <div><img src="https://www.flaticon.com/svg/static/icons/svg/2922/2922506.svg"/></div>
+                            <div>
+                                <h4 class="orange">Extranet group for external users</h4>
+                                <p>This private visible group is for external users. The Extranet group hosts subcontractors, pa...</p>
+                                <p>1 member</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div><img src="https://www.flaticon.com/svg/static/icons/svg/1256/1256650.svg"/></div>
+                            <div>
+                                <h4>Open public group</h4>
+                                <p>This private visible group is for external users. The Extranet group hosts subcontractors, pa...</p>
+                                <p>1 member</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div><img src="https://www.flaticon.com/svg/static/icons/svg/892/892739.svg"/></div>
+                            <div>
+                                <h4>Private hidden group</h4>
+                                <p>This private visible group is for external users. The Extranet group hosts subcontractors, pa...</p>
+                                <p>1 member</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div><img src="https://www.flaticon.com/svg/static/icons/svg/1047/1047792.svg"/></div>
+                            <div>
+                                <h4>Private visible group</h4>
+                                <p>This private visible group is for external users. The Extranet group hosts subcontractors, pa...</p>
+                                <p>1 member</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="workGroup__right__side">
+                    <div class="workGroups__banner1"><div id="recently__Open"><p>RECENTLY OPENED</p></div></div>
+                    <div class="workGroups__banner2">
+                        <div><img src="https://www.flaticon.com/svg/static/icons/svg/1077/1077114.svg"/></div>
+                        <div class="new__Orange">
+                            <h4 class="orange">Extranet group for exte..</h4>
+                            <p>This private visible group is for external users...</p>
+                        </div>
+                    </div>
+                </div>
+    
+           </div>
+
+        </div>
+    </div>
+    <div id="myRight__bar">
+        <span class="highlightTwo" ><i class="material-icons">help</i></span>
+        <span class="highlightTwo" ><i class="material-icons">notifications</i></span>
+        <span class="highlightTwo"><i class="material-icons">search</i></span>
+    </div>
+    <div id="myFooter__bar">
+        <button class="button__logo"><img src="https://www.bitrix24.com/online-domains-map/logo-bx24-en.png" /></button>
+        <button class="button__logo">English</button>
+        <span>© 2020 Bitrix24</span>
+        <span>|</span>
+        <span>Implementation request</span>
+        <span>|</span>
+        <span>Themes</span>
+        <span>|</span>
+        <span>Print</span>
+    </div>
+
+    <script src="./scripts/skeleton.js"></script>
+</body>
+</html>

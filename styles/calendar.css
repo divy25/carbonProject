@@ -1,0 +1,577 @@
+/* this is skeleton css */
+body {
+  font-family: "Lato", sans-serif;
+  min-height:970px;
+  height:800px;
+  min-width: 1100px;
+  background-color: #EEF2F4;
+}
+
+.sidebar {
+  height: 100%;
+  width: 85px;
+  position: fixed;
+  z-index: 1;
+  top: 40px;
+  left: 0;
+  background-color: transparent;
+  transition: 0.5s;
+  overflow-x: hidden;
+  padding-top: 60px;
+  white-space: nowrap;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(19, 19, 19);
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+main .sidebar {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.material-icons,
+.icon-text {
+  vertical-align: middle;
+}
+
+.material-icons {
+  padding-bottom: 3px;
+  margin-right: 30px;
+  
+}
+.blank{
+  /* border:2px solid blue; */
+  width:100%;
+  height:30px;
+  margin-top:-30px;
+}
+/*main div*/
+#main {
+  padding: 16px;
+  margin-left: 85px;
+  transition: margin-left 0.5s;
+  /* border:2px solid black; */
+  width:83%;
+  min-width:60%;
+  background-color:white ;
+  height:1300px;
+  /* display:flex; */
+  position:absolute;
+  top:70px;
+  border:0.5px solid rgb(218, 218, 218);
+
+}
+/* .main__table1{
+    width: 70%;
+    border:2px solid black;
+    height:100%;
+}
+.main__table2{
+
+  width: 40%;
+  border:2px solid black;
+  height:100%;
+} */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+/*navbar*/
+#myNavbar{
+    width:100%;
+    height: 60px;
+   /* border: 0.2px solid green;*/
+    display:flex;
+    /* background-color: #333; */
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: #535C69;
+}
+#myNavbar span{
+    margin:10px;
+}
+#myNavbar > span> span:nth-child(1){
+     margin:10px;
+     font-size: 30px;
+     color:white;
+}
+#myNavbar > span> span:nth-child(2){
+  margin:0px;
+  font-size: 30px;
+  color:#61C7F7;
+}
+#myNavbar > .active > a{
+    /* border:2px solid green; */
+} 
+
+.icon__comb{
+    display: flex;
+}
+
+.nav__EditIcon{
+    padding-left:120px;
+    margin-top:25px;
+    padding-top:10px;
+    color:white;
+    
+}
+#myNavbar > .inputContainer{
+  width:30%;
+  height:30px;
+  margin-top: 20px;
+  margin-left:-10px;
+  background-color:transparent;
+  /* color:rgb(219, 219, 219); */
+  border-radius:10px;
+  /* border:2px solid green; */
+  min-width:500px;
+}
+#myNavbar input[type="text"]{
+    width:85%;
+    height:30px;
+    margin-top: -10px;
+    background-color:transparent;
+    font-size: 20px;
+    color:rgb(75, 75, 75);
+    /* color:rgb(255, 255, 255); */
+    border-radius:10px;
+    /* border:2px solid rgb(82, 46, 83); */
+    outline: none;
+}
+
+#myNavbar input:focus{
+    background-color: white;
+}
+h2{
+    font-size: 70px;
+}
+#myNavbar > .clockDisplay{
+  color: white;
+  font-size: 30px;
+  margin-left:8%;
+  width:18%;
+  height: 65%;
+  /* border:2px solid blue; */
+  margin-top: -5px;
+  text-align: left;
+  padding:10px;
+  padding-top:15px;
+  min-width:300px;
+
+}
+
+#myNavbar > .clockDisplay:hover,   #myNavbar > .clockDisplay:focus {
+  background-color: #6a6d6eb2;
+}
+#myNavbar > .userDisplay{
+  color: white;
+  font-size: 20px;
+  width:15%;
+  height: 25px;
+  /* border:2px solid blue; */
+  text-align: center;
+  padding:20px;
+  margin-top:-5px;
+  margin-left:-7px;
+  opacity: 0.7; 
+}
+#myNavbar > .userDisplay:hover{
+  opacity: 1; 
+  filter: brightness(150%);
+}
+/* .icon__flag{
+  border:2px solid green;
+  width:200px;
+  margin-left:-40px;
+  height: 20%;
+} */
+.sidebar a.active{
+  background-color: #979797;
+  /* border:1px solid blue; */
+  border-radius:90px;
+  height:20px;
+  padding-bottom:10px;
+ 
+}
+/* #mySidebar a i.active1{
+ 
+  border:1px solid blue;
+  background-color:rgb(185, 185, 185);
+  color:white;
+  height:35px;
+  width:40px;
+  padding-left:12px;
+  padding-top:10px;
+  border-radius:50%;
+} */
+
+/*Right-side bar toggle button*/
+.toggleBtn{
+margin:10px;
+border:none;
+
+background-color: transparent;
+color:white;
+width:50px;
+height:40px;
+margin-top:6px;
+}
+.toggleBtn:focus {
+outline: none;
+}
+#myRight__bar{
+/* border-left:0.1px solid rgb(153, 153, 153); */
+position:absolute;
+width:5%;
+top:0px;
+right:0px;
+height:1500px;
+background-color: #535C69;
+display:flex;
+flex-direction: column;
+}
+#myRight__bar > span{
+/* border:2px solid blue; */
+height:60px;
+}
+#myRight__bar > span>i:nth-child(1){
+color:white;
+}
+
+
+#myRight__bar > span i{
+  /* border:1px solid blue; */
+  background-color:rgba(151, 151, 151, 0.596);
+  color:rgb(46, 46, 46);
+  height:30px;
+  width:35px;
+  padding-left:12px;
+  padding-top:10px;
+  border-radius:50%;
+  margin-left:20px;
+  margin-bottom:20px;
+  margin-top:10px;
+
+}
+.highlightTwo:hover{
+background-color: #666;
+color: white;
+}
+
+
+/*clock styles*/
+
+.highlight:hover{
+background-color: #6a6d6eb2;
+color: white;
+}
+
+/*side panel*/
+
+.sidepanel  {
+width: 350px;
+position: fixed;
+z-index: 1;
+height: 100%;
+top: 0;
+left: 0;
+background-color: whitesmoke;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidepanel a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #7c7b7b;
+display: block;
+transition: 0.3s;
+}
+
+.sidepanel a:hover {
+color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+}
+
+.openbtn {
+font-size: 20px;
+cursor: pointer;
+background-color: #111;
+color: white;
+padding: 10px 15px;
+border: none;
+}
+
+.openbtn:hover {
+background-color:#444;
+}
+.space{
+height:35px;
+}
+/*dropdown menu*/
+/* Dropdown Button */
+.dropbtn {
+background-color:transparent;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+width:300px;
+/* border:2px solid white; */
+margin-left: -10px;
+
+}
+.dropdown-content1{
+  background-color: blue;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+background-color: #9393937c;
+}
+
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: blue;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 2;
+}
+
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover{
+  background-color: #ddd
+}
+
+.show {display:block;
+
+}
+
+
+/*myfooter*/
+#myFooter__bar{
+display:flex;
+/* border:2px solid black; */
+justify-content: space-between;
+width:50%;
+align-items: center;
+position: absolute;
+bottom:-500px;
+left:85px;
+color:rgb(100, 100, 100);
+margin-left:20px;
+
+}
+.button__logo{
+background-color: transparent;
+width:200px;
+height:30px;
+border:1px solid rgb(75, 75, 75);
+border-radius: 5px;
+}
+.button__logo>img{
+width:150px;
+height:20px;
+}
+.footer__elementBorder{
+border:2px solid blue;
+}
+
+
+/* skeleton css ends here */
+
+
+/* start your css from here */
+.top__main{
+  width:100%;
+  height:40px;
+  background-color:#ffffff;
+  margin-top: -15px;
+  /* border:2px solid red; */
+  display:flex;
+  justify-content: left;
+  align-items: center;
+  min-width:1000px;
+}
+.top__main button{
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid blue;
+    outline:none;
+
+}
+.top__main button:nth-child(2){
+  background-color: transparent;
+  border:none;
+  margin-left:2%;
+
+}
+.top__main2{
+    width:62%;
+    height:80px;
+    background-color:#EEF2F4;
+    /* border:2px solid rgb(5, 3, 3); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    float:left;
+   
+    
+}
+.top__main3{
+       width:38%;
+       height:80px;
+      background-color:#EEF2F4;
+      /* border:2px solid rgb(5, 3, 3); */
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      float:right;
+
+  }   
+  .top__main3 button{
+      width:100px;
+      height: 30px;
+      background-color: transparent;
+      border-radius: 5px;
+      outline:none;
+      border:none;
+  }
+  .top__main3 button:hover{
+    width:100px;
+    height: 30px;
+    background-color: rgb(177, 177, 177);
+}
+  .top__main3 div:nth-child(1){
+      margin-left:60%;
+  }
+  .top__main2 p{
+      font-size: 30px;
+      
+  }
+  .top__main2 button{
+      width:60px;
+      height: 30px;
+      background-color: skyblue;
+      border:none;
+      outline:none;
+      border-radius: 5px;
+      
+  }
+  .top__main2 button:hover{
+    background-color: rgb(84, 183, 223);
+  }
+
+  .top__main2 input{
+      width:150%;
+      height: 25px;
+      
+  }
+
+
+  /* start your css from here */
+
+
+.strike {
+  text-decoration: line-through;
+}
+
+td{
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #8898ad;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 2;
+  border-radius:5px
+}
+
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
+#calendar{
+  /* border:2px solid blue; */
+  height:600px;
+} 
+.fc-dayGridMonth-view {
+  height:1000px;
+}
+.fc-timeGridWeek-button .fc-button .fc-button-primary{
+  display:none;
+  background-color: red;
+}
+.fc-dayGridWeek-view .fc-scrollgrid  .fc-scrollgrid-liquid {
+  height:600px;
+}
+.fc-button-group .fc-button-primary{
+  background-color: #535C69;
+}
+.calendar__taskAdder{
+    /* border:2px solid blue; */
+    margin-left:200px;
+    height:30px;
+    border-radius:5px;
+    border:none;
+    font-size: 20px;
+}
+.hidden{
+  visibility: hidden;
+}
+.fc-dayGridWeek-view{
+  height:600px;
+}
+#star{
+  margin-left:-10%;
+}
+/* to do styles ends here */

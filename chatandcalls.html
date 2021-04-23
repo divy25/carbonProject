@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="shortcut icon" href="https://bitrix24.net/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/chatandcalls.css">
+    <title>Chats and calls</title>
+</head>
+<body onload="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div id="myNavbar" >
+        <button class="toggleBtn" id="toggleBtn1" onClick="toggleSidebar()">&#9776;</button>
+        <span id="full__Logo"><span>Bitrix</span><span>24</span></span>
+        <span class="nav__EditIcon"><i class="material-icons">edit</i></span>
+        
+        <div class="inputContainer">
+            <input type="text" required placeholder="find people,documents and more" /> 
+            <i class="material-icons">search</i>
+            </div>
+            <span id="clockDisplay" class="clockDisplay"></span>
+                    <button onclick="myFunction()" class="dropbtn">
+                        <span class="userDisplay"><i class="material-icons">account_circle</i> USER</span>
+                    </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#Myprofile">My Profile</a>
+                    <a href="#Themes">Themes</a>
+                    <a href="#MyBitrix24">My Bitrix24.Network page</a>
+                    <a href="#Configure">Configure notifications</a>
+                    <a href="#upgrade">Upgrade your plan</a>
+                    <a href="#Extensions">Extensions</a>
+                    <a href="#Logout">Log out</a>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div id="mySidebar" class="sidebar">
+        <div class="blank" onclick="openNav()"></div>
+        <a class="highlight" href="./index.html"><i class="material-icons">dynamic_feed</i><span class="icon-text">Feed</span></a><br>
+        <a class="highlight"   href="./taskandprojects.html"><i class="material-icons">task_alt</i><span class="icon-text"></span>Task and Projects</a></span></a><br>
+        <a class="active" class="highlight"  href="./chatandcalls.html"><i class="material-icons">chat_bubble</i><span class="icon-text"></span>Chat and Calls</span></a><br>
+        <a class="highlight" href="./workgroups.html"><i class="material-icons">group_work</i><span class="icon-text"></span>Workgroups</span></a><br>
+        <a class="highlight" href="./bitrix24drive.html"><i class="material-icons">storage</i><span class="icon-text"></span>Bitrex24 Drive</span></a><br>
+        <a class="highlight" href="./timeandreports.html"><i class="material-icons">pending_actions</i><span class="icon-text"></span>Time and Reports</span></a><br>
+        <a class="highlight" href="./crm.html"><i class="material-icons">support_agent</i><span class="icon-text"></span>CRM</span></a><br>
+        <a class="highlight" href="./calendar.html"><i class="material-icons">calendar_today</i><span class="icon-text"></span>Calendar<span></a>
+        
+      </div>
+   
+      <div id="main">
+          <p class="newHeading">Chat & Calls</p>
+        
+          <div class="overlay-content"> 
+            <div class="overlay-content-box1">
+              <div><input type="text" placeholder="search here"/></div>
+              <div><p>Private Chats</p></div>
+              <div class="overlay-content-box1-combined">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"/>
+                <div class="overlay-content-box1-chatperson">Suraj</div>
+              </div>
+              <div class="overlay-content-box1-combined" id="remove__Background">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"/>
+                <div class="overlay-content-box1-chatperson">Narendra</div>
+              </div>
+              <div class="overlay-content-box1-combined" id="remove__Background">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"/>
+                <div class="overlay-content-box1-chatperson">Divya</div>
+              </div>
+            </div>
+              <div class="overlay-content-box2">
+                <div class="msger">
+                  <header class="msger-header">
+                    <div class="msger-header-title">
+                      <i class="fas fa-comment-alt"></i> Suraj
+                    </div>
+                    <div class="msger-header-options">
+                      <span><i class="fas fa-cog"></i></span>
+                    </div>
+                  </header>
+                
+                  <main class="msger-chat">
+                    <div class="msg left-msg">
+                      <div
+                      class="msg-img"
+                      style="background-image: url(https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg)"
+                      ></div>
+                
+                      <div class="msg-bubble">
+                        <div class="msg-info">
+                          <div class="msg-info-name">Suraj</div>
+                          <div class="msg-info-time">10:00</div>
+                        </div>
+                
+                        <div class="msg-text">
+                          Hello ! 😄
+                        </div>
+                      </div>
+                    </div>
+                    <div class="msg right-msg">
+                      <div
+                      class="msg-img"
+                      style="background-image: url(https://as2.ftcdn.net/jpg/01/26/63/11/500_F_126631173_W9Nq8ZA5s0R0M3ZIBx3BMytVIFseGa9c.jpg)"
+                      ></div>
+                
+                      <div class="msg-bubble">
+                        <div class="msg-info">
+                          <div class="msg-info-name">User</div>
+                          <div class="msg-info-time">10:46</div>
+                        </div>
+                
+                        <div class="msg-text">
+                          Hello ! whats the work progress ?
+                        </div>
+                      </div>
+                    </div>
+                  </main>
+                
+                  <form class="msger-inputarea">
+                    <input type="text" class="msger-input" placeholder="Enter your message...">
+                    <button type="submit" class="msger-send-btn">Send</button>
+                  </form>
+                </div>
+              </div>
+          </div>
+      
+      </div>
+    <div id="myRight__bar">
+        <span class="highlightTwo" ><i class="material-icons">help</i></span>
+        <span class="highlightTwo" ><i class="material-icons">notifications</i></span>
+        <span class="highlightTwo"><i class="material-icons">search</i></span>
+    </div>
+    <div id="myFooter__bar">
+        <button class="button__logo"><img src="https://www.bitrix24.com/online-domains-map/logo-bx24-en.png" /></button>
+        <button class="button__logo">English</button>
+        <span>© 2020 Bitrix24</span>
+        <span>|</span>
+        <span>Implementation request</span>
+        <span>|</span>
+        <span>Themes</span>
+        <span>|</span>
+        <span>Print</span>
+    </div>
+
+    <script src="./scripts/skeleton.js"></script>
+    <script src=./scripts/chatandcalls.js></script>
+</body>
+</html>
