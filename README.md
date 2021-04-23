@@ -1,4 +1,4 @@
-# Titans-Carbon
+# Bitrix24 Clone
 
 <!-- PROJECT LOGO -->
 <br />
