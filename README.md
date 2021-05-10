@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/narendrapalacharla/carbonProject.git">
+  <a href="https://github.com/divy25/carbonProject.git">
     CARBON TEAM
   </a>
 
@@ -12,14 +12,14 @@
   <p align="center">
     we are assigned with Bitrix24.net clone !
     <br />
-    <a href="https://github.com/narendrapalacharla/carbonProject.git"><strong>Explore our work here»</strong></a>
+    <a href="https://github.com/divy25/carbonProject.git"><strong>Explore our work here»</strong></a>
     <br />
     <br />
-    <a href="https://github.com/narendrapalacharla/carbonProject/issues">View issues</a>
+    <a href="https://github.com/divy25/carbonProject/issues">View issues</a>
     ·
-    <a href="https://github.com/narendrapalacharla/carbonProject/commits/master">Total commits</a>
+    <a href="https://github.com/divy25/carbonProject/commits/master">Total commits</a>
     ·
-    <a href="https://github.com/narendrapalacharla/carbonProject/pulls">pull requests</a>
+    <a href="https://github.com/divy25/carbonProject/pulls">pull requests</a>
   </p>
 </p>
 
@@ -91,7 +91,7 @@ A side panel feature is added on the intro feed page.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/narendrapalacharla/carbonProject.git
+   git clone https://github.com/divy25/carbonProject.git
    ```
 <!-- CONTRIBUTING -->
 ## Contributors 
@@ -113,9 +113,9 @@ A side panel feature is added on the intro feed page.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [my twitter](https://twitter.com/narendrapalach1)
+Your Name - [my linkedin](https://linkedin.com/in/divy25)
 
-Project Link: [project repo](https://github.com/narendrapalacharla/carbonProject.git)
+Project Link: [project repo](https://github.com/divy25/carbonProject.git)
 
 ## Acknowledgment
 i took some inputs from these resources,i would be thankful to them as well.
