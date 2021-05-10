@@ -113,7 +113,7 @@ A side panel feature is added on the intro feed page.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [my linkedin](https://linkedin.com/in/divy25)
+Divya Prakash - [my linkedin](https://linkedin.com/in/divy25)
 
 Project Link: [project repo](https://github.com/divy25/carbonProject.git)
 
