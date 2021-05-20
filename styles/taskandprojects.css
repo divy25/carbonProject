@@ -391,7 +391,7 @@ justify-content: space-between;
 width:50%;
 align-items: center;
 position: absolute;
-bottom:0px;
+bottom:-400px;
 left:85px;
 color:rgb(100, 100, 100);
 margin-left:20px;
@@ -809,18 +809,18 @@ img,i{
   font-weight:bold;
 }
 .tasksInfo>:nth-child(1){
-  margin: 0px 200px 0px 20px;
+  margin: 0px 150px 0px 20px;
   
 }
 .tasksInfo>:nth-child(2){
-  width: 300px;
+  width: 100px;
   
 }
 .tasksInfo>:nth-child(2)>span{
   cursor: pointer;
   padding-left:20px;
   color: #85caeb;
-  font-size:18px;
+  font-size:12px;
   font-weight:800;
 
 }
@@ -840,8 +840,9 @@ img,i{
 }
 .tasksLast{
   display: flex;
-  height: 100px;
+  height: 70px;
   background-color: white;
+  padding-top: 2%;
   
 }
 .tasksLast>:nth-child(1){

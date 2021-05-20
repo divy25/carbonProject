@@ -982,7 +982,7 @@ justify-content: space-between;
 width:50%;
 align-items: center;
 position: absolute;
-bottom:0px;
+bottom:-400px;
 left:85px;
 color:rgb(100, 100, 100);
 margin-left:20px;
